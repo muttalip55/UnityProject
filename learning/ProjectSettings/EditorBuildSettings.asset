@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu/MenuScene.unity
+    guid: 4de075ebeb96e4f2381ef378648e439c
+  - enabled: 1
+    path: Assets/Scenes/Animals/Animals1.unity
+    guid: 3bf6b864008a54f208cf5cf783bb9cd4
+  - enabled: 1
+    path: Assets/Scenes/Animals/Animals2.unity
+    guid: 01da896f7d09f42949aa78781fae84e9
+  - enabled: 1
+    path: Assets/Scenes/Animals/Animals3.unity
+    guid: a298bb554c46446839d758cdbf7429b5
+  - enabled: 1
+    path: Assets/Scenes/Colors/Colors1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Colors/Colors2.unity
+    guid: a0daf99e534c7488ba0b5fd78b8f9e93
+  - enabled: 1
+    path: Assets/Scenes/Colors/Colors3.unity
+    guid: 3db9f1e6e6f9348e587e28ed32413909
+  - enabled: 1
+    path: Assets/Scenes/Colors/Colors4.unity
+    guid: 21875145193906f4bb90341a8403d6af
+  - enabled: 1
+    path: Assets/Scenes/Numbers/Numbers1.unity
+    guid: 56a5399d1d57246c382963bfaa2b98b5
+  - enabled: 1
+    path: Assets/Scenes/Numbers/Numbers2.unity
+    guid: 6c9632f5cf5144721bed2bb65a787f3d
+  - enabled: 1
+    path: Assets/Scenes/Numbers/Numbers3.unity
+    guid: af5f301b85acd4ccca97d94775f35f8c
+  - enabled: 1
+    path: Assets/Scenes/Numbers/Numbers4.unity
+    guid: d5cddefb956f41d48bee0a7c97d70346
+  m_configObjects: {}
