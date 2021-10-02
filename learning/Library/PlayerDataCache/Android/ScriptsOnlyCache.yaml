@@ -1104,7 +1104,7 @@ ScriptsOnlyBuild:
     className: BoardMenuSelection
   - hash:
       serializedVersion: 2
-      Hash: e027e733d6574bd29bf4b0ccfe783c02
+      Hash: f3136de3f08ce86573056a7cbfa2e06e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: FishingRodanager
@@ -1548,4 +1548,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Numbers/Numbers2.unity
   - Assets/Scenes/Numbers/Numbers3.unity
   - Assets/Scenes/Numbers/Numbers4.unity
-  playerPath: C:/Users/MuttalipOlgun/Desktop/Staj/SON.apk
+  playerPath: C:/Users/MuttalipOlgun/Desktop/Staj/Video2.apk

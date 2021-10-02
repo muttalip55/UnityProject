@@ -127,6 +127,7 @@ public class ShoppingBasket : MonoBehaviour
             material1 = 12;
             material2 = 8;
             material3 = 7;
+            PlayerPrefs.SetInt("number4Star", 3);
 
             material1text.color = Color.green;
             material1Img.SetActive(true);
@@ -144,12 +145,14 @@ public class ShoppingBasket : MonoBehaviour
         }
         else if (number4Star == 2)
         {
+            PlayerPrefs.SetInt("number4Star", 2);
             star1.SetActive(true);
             star2.SetActive(true);
 
         }
         else if (number4Star == 1)
         {
+            PlayerPrefs.SetInt("number4Star", 1);
             star1.SetActive(true);
         }
     }

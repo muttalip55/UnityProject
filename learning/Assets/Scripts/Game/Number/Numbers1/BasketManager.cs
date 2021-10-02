@@ -31,8 +31,6 @@ public class BasketManager : MonoBehaviour
         win = false;
         timerSound.SetActive(false);
 
-        temptimeSand2 = timeSand.transform.position;
-        temptimeSand1 = timeSand.transform.position;
 
        // lefTimeSand = temptimeSand2.x / (time + 2);
 
@@ -73,8 +71,6 @@ public class BasketManager : MonoBehaviour
         time -= Time.deltaTime;
             timeSlider.value = time;
 
-           // temptimeSand2.x -= Time.deltaTime * lefTimeSand;
-            timeSand.transform.position = temptimeSand2;
 
             timeText.color = Color.black;
             timeText.text = "" + (int)time;

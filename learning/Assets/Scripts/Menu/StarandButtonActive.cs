@@ -49,6 +49,7 @@ public class StarandButtonActive : MonoBehaviour
         animal1Game();
         animal2Game();
         animal3Game();
+        animal4Game();
 
         number1Game();
         number2Game();

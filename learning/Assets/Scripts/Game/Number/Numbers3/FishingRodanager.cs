@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class FishingRodanager : MonoBehaviour
 {
-    public GameObject star1, star2, star3, GameOver, timerSound;
+    public GameObject star1, star2, star3, GameOver, fishs, timerSound;
     public GameObject Boardstar1, Boardstar2, Boardstar3;
     public int i, number2Star;
     public int misson1, misson2, misson3;
@@ -15,14 +15,11 @@ public class FishingRodanager : MonoBehaviour
     private bool win;
     public Animator anim;
 
-    public GameObject timeSand;
     public Slider timeSlider;
-    private Vector3 temptimeSand2, temptimeSand1;
-    private float lefTimeSand;
 
     void Start()
     {
-       // PlayerPrefs.SetInt("number2Star", 0);
+        fishs.SetActive(true);
         number2Star = PlayerPrefs.GetInt("number2Star");
         starGet(number2Star);
         SoundGet(number2Star);
@@ -31,10 +28,6 @@ public class FishingRodanager : MonoBehaviour
         win = false;
         timerSound.SetActive(false);
 
-        temptimeSand2 = timeSand.transform.position;
-        temptimeSand1 = timeSand.transform.position;
-
-        lefTimeSand = temptimeSand2.x / (time + 2);
 
         timeSlider.maxValue = time;
         timeSlider.value = time;
@@ -76,8 +69,6 @@ public class FishingRodanager : MonoBehaviour
             time -= Time.deltaTime;
             timeSlider.value = time;
 
-            temptimeSand2.x -= Time.deltaTime * lefTimeSand;
-            timeSand.transform.position = temptimeSand2;
 
             timeText.color = Color.black;
             timeText.text = "" + (int)time;
@@ -116,14 +107,13 @@ public class FishingRodanager : MonoBehaviour
 
         if (time < 0 && win == false)
         {
+            fishs.SetActive(false);
             GameOver.SetActive(true);
             BoardStarControl();
         }
 
         if (time < 0 && win == true)
         {
-            timeSand.transform.position = temptimeSand1;
-            temptimeSand2 = temptimeSand1;
             time = 15;
             timeText.text = "" + (int)time;
             win = false;

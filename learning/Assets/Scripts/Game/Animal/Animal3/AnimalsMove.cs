@@ -119,7 +119,7 @@ public class AnimalsMove : MonoBehaviour
 
         if (timeSlider.value >= 0 && animal3Star == 0 && run)
         {
-        animalRB1.velocity = new Vector2(move1 * moveSpeed * 100 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
+        animalRB1.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
         
             if (animalRB1.velocity.x < 0)
             {
@@ -157,7 +157,7 @@ public class AnimalsMove : MonoBehaviour
         {
             
 
-            animalRB2.velocity = new Vector2(move1 * moveSpeed * 100 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
+            animalRB2.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
 
             if (animalRB2.velocity.x < 0)
             {
@@ -191,7 +191,7 @@ public class AnimalsMove : MonoBehaviour
 
         if (timeSlider.value >= 0 && animal3Star == 2 && run)
         {
-            animalRB3.velocity = new Vector2(move1 * moveSpeed * 100 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
+            animalRB3.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
 
             if (animalRB3.velocity.x < 0)
             {
@@ -228,6 +228,7 @@ public class AnimalsMove : MonoBehaviour
     {
         if (animal3Star == 3)
         {
+            PlayerPrefs.SetInt("animal3Star", 3);
             star1.SetActive(true);
             star2.SetActive(true);
             star3.SetActive(true);
@@ -236,11 +237,13 @@ public class AnimalsMove : MonoBehaviour
         }
         else if (animal3Star == 2)
         {
+            PlayerPrefs.SetInt("animal3Star", 2);
             star1.SetActive(true);
             star2.SetActive(true);
         }
         else if (animal3Star == 1)
         {
+            PlayerPrefs.SetInt("animal3Star", 1);
             star1.SetActive(true);
         }
     }
