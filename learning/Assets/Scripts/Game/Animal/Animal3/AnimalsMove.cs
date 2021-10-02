@@ -119,7 +119,7 @@ public class AnimalsMove : MonoBehaviour
 
         if (timeSlider.value >= 0 && animal3Star == 0 && run)
         {
-        animalRB1.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
+        animalRB1.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 25 * Time.deltaTime);
         
             if (animalRB1.velocity.x < 0)
             {
@@ -157,7 +157,7 @@ public class AnimalsMove : MonoBehaviour
         {
             
 
-            animalRB2.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
+            animalRB2.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 25 * Time.deltaTime);
 
             if (animalRB2.velocity.x < 0)
             {
@@ -191,7 +191,7 @@ public class AnimalsMove : MonoBehaviour
 
         if (timeSlider.value >= 0 && animal3Star == 2 && run)
         {
-            animalRB3.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 100 * Time.deltaTime);
+            animalRB3.velocity = new Vector2(move1 * moveSpeed * 25 * Time.deltaTime, move2 * moveSpeed * 25 * Time.deltaTime);
 
             if (animalRB3.velocity.x < 0)
             {

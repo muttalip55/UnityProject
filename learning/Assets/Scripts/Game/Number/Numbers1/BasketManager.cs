@@ -31,9 +31,6 @@ public class BasketManager : MonoBehaviour
         win = false;
         timerSound.SetActive(false);
 
-
-       // lefTimeSand = temptimeSand2.x / (time + 2);
-
         timeSlider.maxValue = time;
         timeSlider.value = time;
     }
@@ -115,10 +112,9 @@ public class BasketManager : MonoBehaviour
 
         if (time < 0 && win == true)
         {
-            timeSand.transform.position = temptimeSand1;
-            temptimeSand2 = temptimeSand1;
             time = 15;
             timeText.text = "" + (int)time;
+            timeSlider.value = time;
             win = false;
         }
         if (time > 3 && time < 0)
